@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    font-family:Baskerville Old Face;
+}
+.menu_bar{
+    background-color:maroon;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content:space-between;
+    left: 0;
+    margin:0;
+}
+
+.icon{
+    float:right;
+    margin-right: 60px;
+    padding: 10px 30px;
+   font-size: 25px;
+
+}
+.logo{
+    color:black;
+    font-size: 40px;
+    
+}
+.logo span{
+    color: darkblue;
+}
+
+.menu_bar ul a{
+    background-color:maroon;
+    color: white;
+  text-decoration: none;
+  font-size: 20px;
+  }
+  
+
+.search button{
+   background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    box-sizing: content-box;
+    background-position: right;
+  
+}
+.menu_bar1{
+    background-color:white;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:black;
+    justify-content:space-between;
+    left: 0;
+    margin:0;
+}
+.menu_bar1 ul{
+    list-style: none;
+    display: flex;
+}
+.menu_bar1 ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar1 ul li a { 
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu_bar1 ul li a:hover {
+    color:coral;
+}
+.menu_bar1 ul li ul{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5 ease;
+
+}
+.menu_bar1 ul li:hover>ul,
+.menu_bar1 ul li ul:hover{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    background-color: wheat;
+}
+.menu_bar1 ul li ul li{
+    clear: both;
+    width: 100%;
+}
+.sec{
+    padding:10px 5%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.products .card{
+    width:310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+.products .card img{
+    height: 250px;
+    width:100%;
+}
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    background-color: #f3f4f6;
+    height:10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+footer p a{
+    text-decoration: none;
+    color:#f63e4e;
+    font-weight: bold;
+}
+

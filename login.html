@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body bgcolor="wheat">
+    <form action="addtocart.html" method="post">
+
+        <div class="container">
+            <h1><center>CREATE YOUR ACCOUNT</center></h1>
+            <hr>
+
+            <label for="name"><b>Full Name</b></label><br>
+            <input type="text" placeholder="Enter Your Name Here" name="user_name" id="user_name" required><br>
+            
+            <label for="email"><b>Email</b></label><br>
+            <input type="email"  placeholder="Enter Your Email Here" name="user_mail" id="user_mail" required><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Your Password Here" name="user_password" id="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"required><br>
+
+            
+            <hr>
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="webpage.html"  >Login</a></p>
+        </div>
+    </form>
+
+<!--Validation for Input for name-->
+
+    <script>
+      function allLetter(inputtxt)
+      { 
+      var letters = /^[A-Za-z]+$/;
+      }
+        </script>
+
+</body>
+
+</html>
